@@ -32,7 +32,9 @@ class Ball:
                         if pos[3] >= brick_pos[1] and pos[1] <= brick_pos[3]:
                             canvas.bell()
                             # Points gained per brick hit.
-                            self.hit += 1
+                            POSSIBLE_POINTS = [10, 15, 20, 25]
+                            random.shuffle(POSSIBLE_POINTS)
+                            self.hit += POSSIBLE_POINTS[0]
                             file1 = open("highscore.txt","r+")
                             highscore = str(file1.read())
                             file1.close()
