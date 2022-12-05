@@ -10,7 +10,7 @@ class Ball:
         self.bottom_hit = False
         # Points to start with at beginning of game
         self.hit = 0   
-        self.id = canvas.create_oval(10, 10, 25, 25, fill=color, width=1)
+        self.id = canvas.create_oval(10, 10, 25, 25, fill=color, width=0)
         self.canvas.move(self.id, 230, 461)
         start = [8, 3.8, 3.6, 3.4, 3.2, 3, 2.8, 2.6]
         random.shuffle(start)
