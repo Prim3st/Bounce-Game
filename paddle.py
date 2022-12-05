@@ -27,7 +27,7 @@ class Paddle:
         self.x = -3.5
 
     def turn_right(self, event):
-        self.x = 0.5
+        self.x = 3.5
 
     def pauser(self,event):
         self.pausec+=1
